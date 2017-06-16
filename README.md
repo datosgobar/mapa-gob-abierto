@@ -10,13 +10,15 @@ Los datos relevados se encuentran en las siguientes planillas públicas:
 * [Iniciativas de Gobierno Abierto](https://docs.google.com/spreadsheets/d/1s3PAPve1G7VFjbsG62vGGOfPLugAHFIdlBM_PPcEblE/edit?usp=sharing)
 * [Referentes de COFEMOD](https://docs.google.com/spreadsheets/d/1tpkdSYaZ2LlpxaxzpNJnZ5waDN15AqCr47NYxoKsgWE/edit?usp=sharing)
 
-Ambas planillas se encuentran incompletas: **te invitamos a colaborar!**
+Ambas planillas se encuentran incompletas: **¡te invitamos a colaborar!**
 
 ## El mapa
 
 El mapa fue construido utilizando [CARTO](https://carto.com/).
 
-Sus capas están sincronizadas con las planillas mencionadas en la sección anterior.
+### Actualización del mapa
+
+El mapa se sincroniza con las planillas mencionadas cada una hora.
 
 ## Cómo armamos el mapa
 
