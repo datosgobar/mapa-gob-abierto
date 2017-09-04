@@ -39,5 +39,21 @@ button.btn {
   padding: 0;
 }
 
+#sumaTuIniciativa {
+  @media (max-width: 600px) {
+    position: absolute;
+    top: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: 601px) {
+      top: 36px;
+      position: relative;
+      transform: translateY(-50%);
+      margin: 0;
+  }
+}
+
 @import 'header';
 @import 'mapa';

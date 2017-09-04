@@ -1,18 +1,35 @@
 <html>
-<head>
-    <meta charset="UTF-8">
-    	<title>Mapa de Iniciativas de Gobierno Abierto</title>
-    <meta name="description" content="Mapa de Iniciativas de Gobierno Abierto en la República Argentina" />
 
+<head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j
-            ,f);
-    })(window,document,'script','dataLayer','GTM-PK7DG3');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PK7DG3');
+    </script>
     <!-- End Google Tag Manager -->
 
+    <title>Mapa de Iniciativas de Gobierno Abierto</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Language" content="es" />
+    <meta name="description" content="Mapa de Iniciativas de Gobierno Abierto en la República Argentina" />
+    <meta name="keywords" content="" />
+    
+    <!-- Meta Facebook -->
     <meta property="og:url" content="https://datosgobar.github.io/mapa-gob-abierto">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mapa de Iniciativas de Gobierno Abierto">
@@ -22,51 +39,41 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
+    <!-- Meta Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@datosgobar"/>
+    <meta name="twitter:site" content="@datosgobar" />
     <meta name="twitter:title" content="Mapa de Iniciativas de Gobierno Abierto">
     <meta name="twitter:description" content="Conocé las iniciativas de Gobierno Abierto que existen en la República Argentina. ¿Hay alguna iniciativa que conocés y no está en el mapa? ¡Agregala!">
     <meta name="twitter:image:src" content="https://datosgobar.github.io/mapa-gob-abierto/img/mapa-ga-metatag-tw.png">
-
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-
-     <link rel="stylesheet" href="css/main.css" type="text/css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/poncho.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PK7DG3"
-        height="0" width="0"
-        style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK7DG3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<div id="header">
-    <div id="header-content" class="container no-padding">
-        <a href="/">
-            <img src="img/logo_ministerio.svg" class="header-logo">
-        </a>
-
-        <a href="https://medium.com/datos-argentina" target="_blank" class="pull-right">
-            <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
-        </a><a href="https://github.com/datosgobar" target="_blank" class="pull-right">
-        <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
-    </a><a href="https://twitter.com/datosgobar" target="_blank" class="pull-right">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-    </a><a href="https://www.facebook.com/GobAbiertoAR/" target="_blank" class="pull-right">
-        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-    </a><a href="http://datos.gob.ar/" target="_blank" class="pull-right">
-        DATOS.GOB.AR
-    </a>
+    <div id="header">
+        <div id="header-content" class="container no-padding">
+            <a href="/"><img src="img/logo_ministerio.svg" class="header-logo"></a>
+            <button id="sumaTuIniciativa" target="_blank" class="pull-right btn btn-primary btn-sm" onclick="window.open('https://docs.google.com/spreadsheets/d/1s3PAPve1G7VFjbsG62vGGOfPLugAHFIdlBM_PPcEblE/edit#gid=0', '_blank');">SUMÁ TU INICIATIVA</button>
+        </div>
     </div>
-</div>
 
-<iframe width="100%" height="100%" frameborder="0" src="https://datosgobar.carto.com/u/datosargentina/builder/3a261b7a-cc72-4d5c-a852-8b0916123b1d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    <iframe width="100%" height="100%" frameborder="0" src="https://datosgobar.carto.com/u/datosargentina/builder/3a261b7a-cc72-4d5c-a852-8b0916123b1d/embed"
+        allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </body>
+
 </html>

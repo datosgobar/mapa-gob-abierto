@@ -28,6 +28,20 @@ button.btn {
 .no-padding {
   padding: 0; }
 
+@media (max-width: 600px) {
+  #sumaTuIniciativa {
+    position: absolute;
+    top: 82px;
+    left: 50%;
+    transform: translateX(-50%); } }
+
+@media (min-width: 601px) {
+  #sumaTuIniciativa {
+    top: 36px;
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0; } }
+
 #header {
   width: 100%;
   height: 72px;
@@ -65,5 +79,3 @@ body.with-header {
 
 iframe {
   padding-top: 72px; }
-
-/*# sourceMappingURL=main.css.map */
