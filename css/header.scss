@@ -3,14 +3,14 @@ $header-height: 72px;
 #header {
   width: 100%;
   height: $header-height;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
   font-weight: 500;
   background: white;
   overflow: hidden;
+  z-index: 3;
 
   .header-logo {
     height: $header-height;
@@ -19,7 +19,9 @@ $header-height: 72px;
     max-width: 100%;
   }
 
-  a.pull-right, a.insite-anchor, span.anchor {
+  a.pull-right,
+  a.insite-anchor,
+  span.anchor {
     line-height: $header-height;
     color: $header-blue;
     display: inline-block;
@@ -30,11 +32,13 @@ $header-height: 72px;
       font-size: 14px;
     }
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
       background: $header-blue;
       color: white;
     }
   }
+
   i {
     vertical-align: middle;
     line-height: 72px;

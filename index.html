@@ -68,17 +68,29 @@
     <div id="header">
         <div id="header-content" class="container no-padding">
             <a href="/"><img src="img/logo_ministerio.svg" class="header-logo"></a>
+            <a href="https://twitter.com/GobAbierto_AR" target="_blank" class="pull-right">
+              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/GobAbiertoAR/" target="_blank" class="pull-right">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          </a>
         </div>
     </div>
 
-    <div id="section_1" class="section flex flex-column">
-        <h1>Titulo</h1>
-        <p>Lorem ipsun</p>
-        <button target="_blank" class="btn btn-primary" onclick="window.open('https://docs.google.com/spreadsheets/d/1s3PAPve1G7VFjbsG62vGGOfPLugAHFIdlBM_PPcEblE/edit#gid=0', '_blank');">SUMÁ TU INICIATIVA</button>
-        <div id="scroll-help" class="flex flex-column">
-            <p>texto texto</p>
-            <span>flecha</span>
+    <div id="section_1" class="section flex">
+      <div class="overlay"></div>
+      <div class="flex bodySection">
+        <div class="container flex flex-column">
+          <h1>Mapa de Gobierno Abierto</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <button target="_blank" class="btn btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScteHrCI02urgGvxq1b-8dWhR_aEv4SSiY7QMaOUXAwg6FVKg/viewform', '_blank');">SUMÁ TU INICIATIVA</button>
+          <div id="scroll-help" class="flex flex-column" onclick="anchorMap()">
+              <p>Lorem ipsum</p>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div>
         </div>
+      </div>
+      <div class="line_background"></div>
     </div>
     <div id="section_2" class="section">
         <iframe width="100%" height="100%" frameborder="0" src="https://datosgobar.carto.com/u/datosargentina/builder/3a261b7a-cc72-4d5c-a852-8b0916123b1d/embed"

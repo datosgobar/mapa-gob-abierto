@@ -1,16 +1,18 @@
-@import 'colors';
-@import 'media_queries.scss';
-
-/* 
-Pasos para modificar css de la landing:
-1.- Moverme a la carpeta donde está este archivo. 
-2.- Compilar de sass a css con el comando "sass --watch main.scss:main.css"
-3.- Al terminar matar ese proceso en la tarminal con Ctrl+C
-*/
+/*
+ * Pasos para modificar css de la landing:
+ * 1.- Moverme a la carpeta donde está este archivo.
+ * 2.- Compilar de sass a css con el comando "sass --watch main.scss:main.css"
+ * 3.- Al terminar matar ese proceso en la tarminal con Ctrl + C
+ */
 
 // TODO: chequear tamaños de tipografias para dispositivos moviles
 
-html, body {
+@import 'colors';
+@import 'media_queries.scss';
+@import 'header';
+
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -20,6 +22,7 @@ html, body {
 a {
   color: $blue-250;
   text-decoration: none !important;
+
   &:hover {
     color: $blue-200;
   }
@@ -29,23 +32,18 @@ button.btn {
   background: $button-blue;
   color: white;
   font-weight: 500;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     background: $button-hover-blue;
     color: white;
   }
 }
 
-.no-padding {
-  padding: 0;
-}
-
-@import 'header';
-@import 'mapa';
-
-// Secciones
+// Home
 .section {
+  height: calc(100vh - 72px);
   width: 100vw;
-  height: 100vh;
   position: relative;
   box-sizing: border-box;
   margin: 0;
@@ -54,8 +52,48 @@ button.btn {
 
 #section_1 {
   margin-top: 72px;
-  height: calc(100vh - 72px);
-  background-image: url('./img/fondo.png');
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+
+  .bodySection {
+    z-index: 2;
+
+    & > .container > h1 {
+      margin: 0 0 30px;
+      color: white;
+      text-align: center;
+    }
+
+    & > .container > p {
+      color: white;
+      text-align: center;
+      margin: 0 0 60px;
+    }
+  }
+}
+
+#scroll-help {
+  position: absolute;
+  bottom: 25px;
+  cursor: pointer;
+
+  & > p {
+    color: white;
+  }
+
+  & > i {
+    color: white;
+    font-size: 32px;
+  }
+}
+
+.line_background {
+  width: 100vw;
+  height: 5px;
+  background-image: url(../img/line_background.svg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 // Helpers
@@ -71,7 +109,6 @@ button.btn {
   flex-direction: column;
 }
 
-#scroll-help {
-  position: absolute;
-  bottom: 10px;
+.no-padding {
+  padding: 0;
 }

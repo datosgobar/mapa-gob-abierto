@@ -1,28 +1,7 @@
-$(document).ready(function () {
+// Document ready
+$(document).ready(function () {});
 
-    function changeButtonPosition() {
-        var width = window.innerWidth;
 
-        if (width > 600) {
-            addToHeader();
-        } else {
-            removeToHeader();
-        }
-    }
-
-    function removeToHeader() {
-        var buttonDom = $('#sumaTuIniciativa');
-        buttonDom.removeClass('pull-right');
-        buttonDom.prependTo('body');
-    }
-
-    function addToHeader() {
-        var buttonDom = $('#sumaTuIniciativa');
-        buttonDom.addClass('pull-right');
-        buttonDom.appendTo('#header-content');
-    }
-
-    changeButtonPosition();
-
-    $(window).resize(changeButtonPosition);
-});
+function anchorMap(_element) {
+  $('html, body').animate({ scrollTop: $('#section_2').offset().top }, 500);
+}
