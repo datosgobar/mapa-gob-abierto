@@ -87,14 +87,21 @@ button.btn {
       margin: 0 0 30px;
       color: white;
       text-align: center; }
+      @media (min-width: 768px) {
+        #section_1 .bodySection > .container > h1 {
+          font-size: 34px; } }
+      @media (min-width: 992px) {
+        #section_1 .bodySection > .container > h1 {
+          font-size: 2.5em; } }
     #section_1 .bodySection > .container > p {
       color: white;
       text-align: center;
-      margin: 0 0 60px; }
+      margin: 0 0 60px;
+      max-width: 768px; }
 
 #scroll-help {
-  position: absolute;
-  bottom: 25px;
+  opacity: 0.8;
+  margin: 0 0 30px;
   cursor: pointer; }
   #scroll-help > p {
     color: white; }
@@ -114,12 +121,51 @@ button.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row; }
+  flex-flow: row nowrap; }
 
 .flex-column {
   flex-direction: column; }
 
+.flex-justify-between {
+  justify-content: space-between; }
+
+.flex-justify-around {
+  justify-content: space-around; }
+
+.flex-justify-start {
+  justify-content: flex-start; }
+
+.flex-justify-end {
+  justify-content: flex-end; }
+
+.flex-align-center {
+  align-items: center; }
+
+.flex-align-between {
+  align-items: space-between; }
+
+.flex-align-around {
+  align-items: space-around; }
+
+.flex-align-start {
+  align-items: flex-start; }
+
+.flex-align-end {
+  align-items: flex-end; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.no-margin {
+  margin: 0; }
+
 .no-padding {
   padding: 0; }
+
+.max-width {
+  width: 100%; }
+
+.max-height {
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
